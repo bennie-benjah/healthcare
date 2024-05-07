@@ -1,0 +1,329 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+
+    padding: 0;
+}
+
+header {
+    background: #25da25;
+    color: #fff;
+    padding: 20px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    flex: 1;
+    text-align: left;
+}
+
+.logo img {
+    height: 50px; /* Adjust height of the logo as needed */
+}
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 30px;
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+nav ul li a {
+    text-decoration: none;
+    white-space: nowrap;
+    color: #333; /* Adjust menu link color as needed */
+    font-size: 16px; /* Adjust menu font size as needed */
+}
+
+.get-in-touch {
+    flex: 1;
+    text-align: right;
+}
+
+.get-in-touch .cta-button {
+    background-color: palevioletred; /* Adjust button background color as needed */
+    color: #fff; /* Adjust button text color as needed */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.get-in-touch .cta-button:hover {
+    background-color: #f09bd3; /* Adjust button hover background color as needed */
+}
+
+h1,
+h2,
+h2,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-right: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid blue;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    background: #f4f4f4;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: palevioletred;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+border-radius: 5px;
+}
+.cta-button:hover{
+    background: #f09bd3;
+}
+
+.services {
+    text-align: center;
+}
+
+.services .service {
+    display: inline-block;
+    text-align: left;
+    width: 30%;
+    /* Adjust the width as needed */
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.services .service h3 {
+    margin-top: 0;
+}
+
+.services .service p {
+    margin-bottom: 0;
+}
+
+.services {
+    padding: 20px;
+
+}
+
+.service {
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.service a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+.service a:hover{
+    color: blue;
+
+}
+
+.product {
+    width: 23%;
+    /* Adjust the width as per your layout */
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h3 {
+    color: green;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    margin-top: 0;
+}
+
+.product p {
+    margin-bottom: 0;
+}
+
+
+footer {
+    background: #000;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+}
+
+footer hr {
+    width: 90%;
+    margin: 0 auto;
+}
+/* General styles */
+/* Add your general styles here */
+
+/* Media queries for smaller screens */
+/* Media Query for Small Devices (e.g., Tablets) */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust font size as needed */
+    }
+
+    .container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .logo img {
+        max-width: 80px; /* Adjust logo size */
+    }
+
+    nav ul li {
+        margin-right: 10px; /* Reduce margin between navigation items */
+    }
+
+    .hero h1 {
+        font-size: 24px; /* Adjust heading size */
+    }
+
+    .about,
+    .services,
+    .products {
+        padding: 20px; /* Add padding to sections */
+    }
+
+    .product {
+        margin: 10px; /* Adjust margin between products */
+    }
+
+    .contribution-options form,
+    .moderation-tools form,
+    .rating-review-system form {
+        width: 90%; /* Adjust form width */
+    }
+
+    .accessibility-content,
+    .inclusivity-content,
+    .localization-content {
+        width: 100%; /* Adjust width of feature sections */
+    }
+}
+
+/* Media Query for Extremely Small Devices (e.g., Smartphones) */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+
+    .logo img {
+        max-width: 60px; /* Reduce logo size further */
+    }
+
+    nav ul li {
+        margin-right: 5px; /* Further reduce margin between navigation items */
+    }
+
+    .hero h1 {
+        font-size: 20px; /* Further reduce heading size */
+    }
+
+    .product {
+        margin: 5px; /* Further reduce margin between products */
+    }
+
+    .contribution-options form,
+    .moderation-tools form,
+    .rating-review-system form {
+        width: 95%; /* Further adjust form width */
+    }
+
+    .accessibility-content,
+    .inclusivity-content,
+    .localization-content {
+        padding: 10px; /* Adjust padding for feature sections */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    header nav ul {
+        flex-direction: column;
+    }
+}
+
+/* Media queries for extremely small screens */
+@media screen and (max-width: 480px) {
+    /* Adjustments for extremely small screens */
+    .about-content {
+        text-align: center;
+    }
+
+    .about-content h3,
+    .about-content p {
+        text-align: center;
+    }
+
+    .services {
+        text-align: center;
+    }
+
+    .service {
+        margin-bottom: 20px;
+    }
+
+    .products {
+        text-align: center;
+    }
+
+    .product {
+        margin-bottom: 20px;
+    }
+}
